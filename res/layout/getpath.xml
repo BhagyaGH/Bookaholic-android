@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:id="@+id/rStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rbIn"
+        android:layout_toRightOf="@+id/rbEntrance"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etSource"
+        android:layout_below="@+id/etSource"
+        android:layout_marginTop="28dp"
+        android:text="@string/ok" />
+
+    <RadioButton
+        android:id="@+id/rbIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rStart"
+        android:layout_below="@+id/textView1"
+        android:text="@string/in_fair" />
+
+    <RadioButton
+        android:id="@+id/rbEntrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rbIn"
+        android:layout_below="@+id/rStart"
+        android:layout_marginTop="152dp"
+        android:text="@string/out_fair" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rbEntrance"
+        android:layout_alignLeft="@+id/rbEntrance"
+        android:layout_marginBottom="58dp"
+        android:text="@string/set_start"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+</RelativeLayout>
